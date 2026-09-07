@@ -24,14 +24,14 @@
 name: "ASF Allowlist Check"
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - '.github/**/*.yml'
-      - '.github/**/*.yaml'
+  # push:
+  #   branches:
+  #     - main
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - '.github/**/*.yml'
+  #     - '.github/**/*.yaml'
 
 permissions:
   contents: read
