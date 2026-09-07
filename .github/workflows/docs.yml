@@ -18,12 +18,12 @@
 name: "Release Docs"
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'mkdocs/**'
-      - 'src/**'
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - 'mkdocs/**'
+  #     - 'src/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
