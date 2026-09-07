@@ -20,14 +20,14 @@
 name: GitHub Actions Security Analysis with zizmor 🌈
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - '.github/**/*.yml'
-      - '.github/**/*.yaml'
+  # push:
+  #   branches:
+  #     - main
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - '.github/**/*.yml'
+  #     - '.github/**/*.yaml'
 
 concurrency:
   group: ${{ github.repository }}-${{ github.head_ref || github.sha }}-${{ github.workflow }}
